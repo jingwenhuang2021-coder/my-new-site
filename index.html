@@ -81,6 +81,13 @@
       text-transform: uppercase;
     }
 
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 28px;
+      align-items: end;
+    }
+
     h1,
     h2,
     h3,
@@ -101,6 +108,31 @@
       margin-top: 16px;
       color: var(--text);
       font-size: 18px;
+    }
+
+    .channel-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .channel-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .channel-card strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    .channel-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
     }
 
     section {
@@ -365,9 +397,11 @@
       }
 
       .section-head,
+      .hero-layout,
       .cards,
       .offer-grid,
       .gift-row,
+      .channel-cards,
       .timeline,
       .phase,
       .message-grid {
@@ -393,9 +427,23 @@
         <button type="button" data-lang-button="es">ES</button>
       </div>
       <header>
-        <div class="eyebrow" data-i18n data-en="Creator Campaign Brief" data-es="Brief de Campaña para Creadores">Creator Campaign Brief</div>
-        <h1 data-i18n data-en="Antigravity A1 Prime Day Campaign" data-es="Campaña Prime Day de Antigravity A1">Antigravity A1 Prime Day Campaign</h1>
-        <p class="lead" data-i18n data-en="A1's strongest Prime Day offer, designed to drive conversion with paid traffic support for selected creator videos." data-es="La oferta más fuerte de A1 para Prime Day, diseñada para impulsar conversiones con apoyo de paid traffic para videos seleccionados.">A1's strongest Prime Day offer, designed to drive conversion with paid traffic support for selected creator videos.</p>
+        <div class="hero-layout">
+          <div>
+            <div class="eyebrow" data-i18n data-en="Creator Campaign Brief" data-es="Brief de Campaña para Creadores">Creator Campaign Brief</div>
+            <h1 data-i18n data-en="Antigravity A1 Prime Day Campaign" data-es="Campaña Prime Day de Antigravity A1">Antigravity A1 Prime Day Campaign</h1>
+            <p class="lead" data-i18n data-en="A1's strongest Prime Day offer, designed to drive conversion with paid traffic support for selected creator videos." data-es="La oferta más fuerte de A1 para Prime Day, diseñada para impulsar conversiones con apoyo de paid traffic para videos seleccionados.">A1's strongest Prime Day offer, designed to drive conversion with paid traffic support for selected creator videos.</p>
+          </div>
+          <div class="channel-cards">
+            <div class="channel-card">
+              <strong>Official Store</strong>
+              <span data-i18n data-en="Same 20% off + Fast Charger gift" data-es="Mismo 20% de descuento + regalo Fast Charger">Same 20% off + Fast Charger gift</span>
+            </div>
+            <div class="channel-card">
+              <strong>Amazon</strong>
+              <span data-i18n data-en="Same 20% off + Fast Charger gift" data-es="Mismo 20% de descuento + regalo Fast Charger">Same 20% off + Fast Charger gift</span>
+            </div>
+          </div>
+        </div>
       </header>
 
       <section>
@@ -486,14 +534,14 @@
               <strong data-i18n data-en="Main Push" data-es="Impulso principal">Main Push</strong>
               <span data-i18n data-en="June 23-26 · Highly recommend" data-es="23-26 de junio · Muy recomendado">June 23-26 · Highly recommend</span>
             </div>
-            <p data-i18n data-en="Best for YouTube Shorts / Reels-style video. Lead with 20% off, show A1, mention Fast Charger gift, and close with CTA." data-es="Ideal para YouTube Shorts o videos tipo Reels. Empieza con el 20% de descuento, muestra A1, menciona el regalo Fast Charger y cierra con CTA.">Best for YouTube Shorts / Reels-style video. Lead with 20% off, show A1, mention Fast Charger gift, and close with CTA.</p>
+            <p data-i18n data-en="Best window for content publishing, including long-form YouTube videos, short-form videos, and polished showcase content. Prime Day traffic can help give the content extra momentum during this period." data-es="La mejor ventana para publicar contenido, incluyendo videos largos de YouTube, videos cortos y showcases bien producidos. El tráfico de Prime Day puede ayudar a dar más impulso al contenido durante este periodo.">Best window for content publishing, including long-form YouTube videos, short-form videos, and polished showcase content. Prime Day traffic can help give the content extra momentum during this period.</p>
           </article>
           <article class="phase">
             <div>
               <strong data-i18n data-en="Sustain" data-es="Recordatorio">Sustain</strong>
               <span data-i18n data-en="June 27-July 12" data-es="27 de junio-12 de julio">June 27-July 12</span>
             </div>
-            <p data-i18n data-en="Best for reminder Stories, Community posts, pinned comments, and link-in-bio prompts while the offer is live." data-es="Ideal para Stories de recordatorio, publicaciones de Community, comentarios fijados y menciones de link in bio mientras la oferta esté activa.">Best for reminder Stories, Community posts, pinned comments, and link-in-bio prompts while the offer is live.</p>
+            <p data-i18n data-en="The offer runs until July 12. If the video cannot go live by June 26, followers can still enjoy the discount and Fast Charger gift as long as the content is published before July 12." data-es="La oferta estará activa hasta el 12 de julio. Si el video no puede publicarse antes del 26 de junio, los seguidores aún podrán disfrutar del descuento y del regalo Fast Charger siempre que el contenido se publique antes del 12 de julio.">The offer runs until July 12. If the video cannot go live by June 26, followers can still enjoy the discount and Fast Charger gift as long as the content is published before July 12.</p>
           </article>
         </div>
       </section>
