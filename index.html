@@ -425,6 +425,7 @@
       <div class="language-toggle" aria-label="Language">
         <button type="button" class="active" data-lang-button="en">EN</button>
         <button type="button" data-lang-button="es">ES</button>
+        <button type="button" data-lang-button="fr">FR</button>
       </div>
       <header>
         <div class="hero-layout">
@@ -612,11 +613,70 @@
   <script>
     const languageButtons = document.querySelectorAll("[data-lang-button]");
     const translatable = document.querySelectorAll("[data-i18n]");
+    const fr = {
+      "Creator Campaign Brief": "Brief de campagne pour créateurs",
+      "Antigravity A1 Prime Day Campaign": "Campagne Prime Day Antigravity A1",
+      "A1's strongest Prime Day offer, designed to drive conversion with paid traffic support for selected creator videos.": "La meilleure offre Prime Day pour A1, conçue pour favoriser les conversions avec du paid traffic sur certaines vidéos de créateurs.",
+      "Same 20% off + Fast Charger gift": "Même réduction de 20% + cadeau Fast Charger",
+      "Why Join": "Pourquoi participer",
+      "Simple reasons this campaign is worth joining.": "Des raisons simples de participer à cette campagne.",
+      "We will boost selected videos.": "Nous boosterons certaines vidéos sélectionnées.",
+      "Videos posted June 23-26 are eligible for paid traffic support and can keep gaining exposure for 2+ weeks.": "Les vidéos publiées du 23 au 26 juin peuvent bénéficier d'un soutien paid traffic et continuer à gagner en visibilité pendant plus de 2 semaines.",
+      "Biggest Prime Day discount.": "La plus forte réduction Prime Day.",
+      "20% off across A1 bundles gives followers a clear reason to act now.": "20% de réduction sur les bundles A1 donne aux abonnés une raison claire d'agir maintenant.",
+      "More commission opportunity.": "Plus d'opportunités de commission.",
+      "A stronger offer can help more viewers move from interest to purchase.": "Une offre plus forte peut aider davantage de spectateurs à passer de l'intérêt à l'achat.",
+      "Offer + Gift": "Offre + Cadeau",
+      "Use the price drop and gift upgrade as the main conversion points.": "Utilisez la baisse de prix et l'amélioration du cadeau comme principaux arguments de conversion.",
+      "20% off all bundles": "20% de réduction sur tous les bundles",
+      "Up to EUR 340 saved": "Jusqu'à EUR 340 d'économies",
+      "Fast Charger gift · EUR 45": "Cadeau Fast Charger · EUR 45",
+      "Haven't had your affiliate link? Please register now.": "Vous n'avez pas encore votre lien affilié ? Inscrivez-vous maintenant.",
+      "Save EUR 280": "Économisez EUR 280",
+      "Save EUR 320": "Économisez EUR 320",
+      "Save EUR 340": "Économisez EUR 340",
+      "Previous Gift": "Cadeau précédent",
+      "Current Gift": "Cadeau actuel",
+      "Posting Timeline": "Calendrier de publication",
+      "Timeline and recommended deliverables are combined below.": "Le calendrier et les formats recommandés sont combinés ci-dessous.",
+      "Teaser": "Teaser",
+      "June 16-22": "16-22 juin",
+      "Best for IG Stories, YouTube Community posts, and Threads. Warm up the audience with “Prime Day offer coming soon.”": "Idéal pour les IG Stories, les posts YouTube Community et Threads. Préparez l'audience avec « L'offre Prime Day arrive bientôt ».",
+      "Main Push": "Push principal",
+      "June 23-26 · Highly recommend": "23-26 juin · Fortement recommandé",
+      "Best window for content publishing, including long-form YouTube videos, short-form videos, and polished showcase content. Prime Day traffic can help give the content extra momentum during this period.": "Meilleure fenêtre pour publier du contenu, y compris des vidéos YouTube longues, des vidéos courtes et des showcases soignés. Le trafic Prime Day peut donner un élan supplémentaire au contenu pendant cette période.",
+      "Sustain": "Relance",
+      "June 27-July 12": "27 juin-12 juillet",
+      "The offer runs until July 12. If the video cannot go live by June 26, followers can still enjoy the discount and Fast Charger gift as long as the content is published before July 12.": "L'offre est valable jusqu'au 12 juillet. Si la vidéo ne peut pas être publiée avant le 26 juin, les abonnés pourront tout de même profiter de la réduction et du cadeau Fast Charger si le contenu est publié avant le 12 juillet.",
+      "Copy-ready Messages": "Messages prêts à copier",
+      "Partners can copy these directly for VO, OSC, caption, pinned comment, Stories, or community posts.": "Les partenaires peuvent copier ces textes directement pour la voix off, l'OSC, la légende, le commentaire épinglé, les Stories ou les posts communautaires.",
+      "Version 1 · Direct Offer": "Version 1 · Offre directe",
+      "Long-form / review content": "Contenu long / review",
+      "Prime Day offer is live. Save up to EUR 340 on Antigravity A1 and get a Fast Charger gift. Don’t miss it if you want the best immersive flying experience.": "L'offre Prime Day est en ligne. Économisez jusqu'à EUR 340 sur Antigravity A1 et recevez un cadeau Fast Charger. Ne la manquez pas si vous voulez la meilleure expérience de vol immersif.",
+      "Short-form / OSC / CTA": "Format court / OSC / CTA",
+      "A1 Prime Day Deal": "Offre Prime Day A1",
+      "20% off": "20% de réduction",
+      "Save up to EUR 340": "Économisez jusqu'à EUR 340",
+      "Fast Charger gift": "Cadeau Fast Charger",
+      "Limited time only": "Offre à durée limitée",
+      "Version 2 · Experience-led": "Version 2 · Axée expérience",
+      "If you’ve been thinking about immersive flying, this is the moment. Antigravity A1 is now 20% off for Prime Day, with a Fast Charger gift included.": "Si vous pensiez essayer le vol immersif, c'est le moment. Antigravity A1 bénéficie maintenant de 20% de réduction pour Prime Day, avec un cadeau Fast Charger inclus.",
+      "Ready for immersive flying?": "Prêt pour le vol immersif ?",
+      "A1 Prime Day Offer": "Offre Prime Day A1",
+      "Fast Charger gift included": "Cadeau Fast Charger inclus",
+      "Check before it ends": "À vérifier avant la fin",
+      "Version 3 · Urgency": "Version 3 · Urgence",
+      "Quick heads-up: Antigravity A1 is running a limited-time Prime Day offer. You can save up to EUR 340 and get a Fast Charger gift, so don’t wait until the deal is gone.": "Petit rappel : Antigravity A1 propose une offre Prime Day à durée limitée. Vous pouvez économiser jusqu'à EUR 340 et recevoir un cadeau Fast Charger, alors n'attendez pas la fin de l'offre.",
+      "Limited-time Prime Day offer": "Offre Prime Day à durée limitée",
+      "Don’t miss it": "Ne la manquez pas",
+      "Check my link": "Consultez mon lien",
+      "Antigravity A1 Prime Day Creator Brief": "Brief créateurs Prime Day Antigravity A1"
+    };
 
     function setLanguage(lang) {
       document.documentElement.lang = lang;
       translatable.forEach((node) => {
-        const value = node.dataset[lang];
+        const value = lang === "fr" ? fr[node.dataset.en] : node.dataset[lang];
         if (value) node.textContent = value;
       });
       languageButtons.forEach((button) => {
