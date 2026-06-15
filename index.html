@@ -500,9 +500,9 @@
   <main class="page">
     <div class="sheet">
       <div class="language-toggle" aria-label="Language">
-        <button type="button" class="active" data-lang-button="en">EN</button>
-        <button type="button" data-lang-button="es">ES</button>
+        <button type="button" class="active" data-lang-button="es">ES</button>
         <button type="button" data-lang-button="fr">FR</button>
+        <button type="button" data-lang-button="en">EN</button>
       </div>
       <header>
         <div class="hero-layout">
@@ -812,6 +812,8 @@
     languageButtons.forEach((button) => {
       button.addEventListener("click", () => setLanguage(button.dataset.langButton));
     });
+
+    setLanguage("es");
   </script>
 </body>
 </html>
