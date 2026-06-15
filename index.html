@@ -252,6 +252,81 @@
       text-decoration: none;
     }
 
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .action-card {
+      display: flex;
+      min-height: 270px;
+      flex-direction: column;
+      padding: 16px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .action-card h3 {
+      font-size: 18px;
+    }
+
+    .action-card ol,
+    .action-card p {
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .action-card ol {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 0;
+      padding-left: 18px;
+    }
+
+    .url-box {
+      display: block;
+      margin-top: 8px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--ink);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.45;
+      word-break: break-all;
+    }
+
+    .action-link {
+      display: inline-block;
+      width: fit-content;
+      margin-top: auto;
+      padding: 10px 12px;
+      border: 1px solid var(--ink);
+      background: var(--accent);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .asset-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .asset-panel p {
+      max-width: 720px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
     .gift-row {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -400,6 +475,8 @@
       .hero-layout,
       .cards,
       .offer-grid,
+      .action-grid,
+      .asset-panel,
       .gift-row,
       .channel-cards,
       .timeline,
@@ -478,7 +555,6 @@
           <span class="tag" data-i18n data-en="Up to EUR 340 saved" data-es="Ahorro de hasta EUR 340">Up to EUR 340 saved</span>
           <span class="tag" data-i18n data-en="Fast Charger gift · EUR 45" data-es="Regalo Fast Charger · EUR 45">Fast Charger gift · EUR 45</span>
         </div>
-        <a class="register-link" href="https://docs.google.com/document/d/16E51cFxfJQLs7LkIojE-bsu1Svn_IUqsCOehwkyggXM/edit?tab=t.0" target="_blank" rel="noreferrer" data-i18n data-en="Haven't had your affiliate link? Please register now." data-es="¿Aún no tienes tu affiliate link? Regístrate ahora.">Haven't had your affiliate link? Please register now.</a>
         <div class="offer-grid">
           <article class="price">
             <h3>A1 Standard Bundle</h3>
@@ -514,6 +590,43 @@
               <strong>Fast Charger · EUR 45</strong>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2 data-i18n data-en="Get Your Prime Day Links" data-es="Consigue tus links de Prime Day" data-fr="Obtenir vos liens Prime Day">Get Your Prime Day Links</h2>
+          <p class="section-note" data-i18n data-en="Use the dedicated Prime Day landing page for this campaign. Partners can use either the Official Store link or the Amazon link." data-es="Usa la landing page dedicada de Prime Day para esta campaña. Los partners pueden usar el link de la tienda oficial o el link de Amazon." data-fr="Utilisez la landing page Prime Day dédiée à cette campagne. Les partenaires peuvent utiliser le lien Official Store ou le lien Amazon.">Use the dedicated Prime Day landing page for this campaign. Partners can use either the Official Store link or the Amazon link.</p>
+        </div>
+        <div class="action-grid">
+          <article class="action-card">
+            <h3>Official Store</h3>
+            <ol>
+              <li data-i18n data-en="Register for the Official Store affiliate program and get your affiliate code." data-es="Regístrate en el affiliate program de la tienda oficial y consigue tu affiliate code." data-fr="Inscrivez-vous au programme d'affiliation Official Store et obtenez votre affiliate code.">Register for the Official Store affiliate program and get your affiliate code.</li>
+              <li>
+                <span data-i18n data-en="Replace xxxxx in this campaign landing page with your own code:" data-es="Reemplaza xxxxx en esta landing page de campaña con tu propio code:" data-fr="Remplacez xxxxx dans cette landing page de campagne par votre propre code :">Replace xxxxx in this campaign landing page with your own code:</span>
+                <span class="url-box">https://www.antigravity.tech/event/big-deal-days-2026?utm_medium=KOL&amp;utm_term=xxxxx</span>
+              </li>
+              <li data-i18n data-en="If you still do not have an affiliate code, follow the guide below." data-es="Si aún no tienes affiliate code, sigue la guía abajo." data-fr="Si vous n'avez pas encore d'affiliate code, suivez le guide ci-dessous.">If you still do not have an affiliate code, follow the guide below.</li>
+            </ol>
+            <a class="action-link" href="https://docs.google.com/document/d/18zWYmMqAacg6Eg6YR7YlkUW-hevh333kawlphH33vLg/edit?tab=t.0" target="_blank" rel="noreferrer" data-i18n data-en="Open Official Store Guide" data-es="Abrir guía de Official Store" data-fr="Ouvrir le guide Official Store">Open Official Store Guide</a>
+          </article>
+          <article class="action-card">
+            <h3>Amazon</h3>
+            <p data-i18n data-en="You can also create and use an Amazon affiliate link for this campaign. Follow the guide below to generate the correct Amazon link." data-es="También puedes crear y usar un link de afiliado de Amazon para esta campaña. Sigue la guía abajo para generar el link correcto de Amazon." data-fr="Vous pouvez également créer et utiliser un lien affilié Amazon pour cette campagne. Suivez le guide ci-dessous pour générer le bon lien Amazon.">You can also create and use an Amazon affiliate link for this campaign. Follow the guide below to generate the correct Amazon link.</p>
+            <a class="action-link" href="https://docs.google.com/document/d/18zWYmMqAacg6Eg6YR7YlkUW-hevh333kawlphH33vLg/edit?tab=t.0" target="_blank" rel="noreferrer" data-i18n data-en="Open Amazon Link Guide" data-es="Abrir guía de link de Amazon" data-fr="Ouvrir le guide du lien Amazon">Open Amazon Link Guide</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2 data-i18n data-en="Campaign Assets" data-es="Materiales de campaña" data-fr="Assets de campagne">Campaign Assets</h2>
+          <p class="section-note" data-i18n data-en="Use the shared asset folder when creating Prime Day content." data-es="Usa la carpeta compartida de materiales al crear contenido de Prime Day." data-fr="Utilisez le dossier d'assets partagé pour créer votre contenu Prime Day.">Use the shared asset folder when creating Prime Day content.</p>
+        </div>
+        <div class="asset-panel">
+          <p data-i18n data-en="All campaign materials are available in this Google Drive folder, including product visuals, offer assets, and content references." data-es="Todos los materiales de campaña están disponibles en esta carpeta de Google Drive, incluyendo visuales del producto, assets de la oferta y referencias de contenido." data-fr="Tous les éléments de campagne sont disponibles dans ce dossier Google Drive, y compris les visuels produit, les assets de l'offre et les références de contenu.">All campaign materials are available in this Google Drive folder, including product visuals, offer assets, and content references.</p>
+          <a class="action-link" href="https://drive.google.com/drive/folders/1rhvKSUmdI-K3N7aWdb4ibILZRHAjLPD_?usp=drive_link" target="_blank" rel="noreferrer" data-i18n data-en="Open Asset Folder" data-es="Abrir carpeta de materiales" data-fr="Ouvrir le dossier d'assets">Open Asset Folder</a>
         </div>
       </section>
 
@@ -637,6 +750,18 @@
       "Save EUR 340": "Économisez EUR 340",
       "Previous Gift": "Cadeau précédent",
       "Current Gift": "Cadeau actuel",
+      "Get Your Prime Day Links": "Obtenir vos liens Prime Day",
+      "Use the dedicated Prime Day landing page for this campaign. Partners can use either the Official Store link or the Amazon link.": "Utilisez la landing page Prime Day dédiée à cette campagne. Les partenaires peuvent utiliser le lien Official Store ou le lien Amazon.",
+      "Register for the Official Store affiliate program and get your affiliate code.": "Inscrivez-vous au programme d'affiliation Official Store et obtenez votre affiliate code.",
+      "Replace xxxxx in this campaign landing page with your own code:": "Remplacez xxxxx dans cette landing page de campagne par votre propre code :",
+      "If you still do not have an affiliate code, follow the guide below.": "Si vous n'avez pas encore d'affiliate code, suivez le guide ci-dessous.",
+      "Open Official Store Guide": "Ouvrir le guide Official Store",
+      "You can also create and use an Amazon affiliate link for this campaign. Follow the guide below to generate the correct Amazon link.": "Vous pouvez également créer et utiliser un lien affilié Amazon pour cette campagne. Suivez le guide ci-dessous pour générer le bon lien Amazon.",
+      "Open Amazon Link Guide": "Ouvrir le guide du lien Amazon",
+      "Campaign Assets": "Assets de campagne",
+      "Use the shared asset folder when creating Prime Day content.": "Utilisez le dossier d'assets partagé pour créer votre contenu Prime Day.",
+      "All campaign materials are available in this Google Drive folder, including product visuals, offer assets, and content references.": "Tous les éléments de campagne sont disponibles dans ce dossier Google Drive, y compris les visuels produit, les assets de l'offre et les références de contenu.",
+      "Open Asset Folder": "Ouvrir le dossier d'assets",
       "Posting Timeline": "Calendrier de publication",
       "Timeline and recommended deliverables are combined below.": "Le calendrier et les formats recommandés sont combinés ci-dessous.",
       "Teaser": "Teaser",
